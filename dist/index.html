@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!--Import Fontawesome-->
     <script
       src="https://kit.fontawesome.com/fd5452d228.js"
       crossorigin="anonymous"
     ></script>
-    <!--Import materialize.css-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Žiga Hajšen</title>
   </head>
 
   <body>
     <!-- Landing page -->
-    <section class="landing grey darken-3">
+    <section id="home" class="grey darken-3 scrollspy">
       <!-- Navbar -->
       <div class="navbar-fixed">
-        <nav class="green darken-2">
+        <nav class="green darken-4">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#" class="brand-logo"
-                >Žiga Hajšen</span></a
-              >
+              <a href="#home" class="brand-logo">Žiga Hajšen</a>
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"
                 ><i class="material-icons">menu</i></a
               >
@@ -49,6 +43,11 @@
                 <li>
                   <a href="#contact">Contact</a>
                 </li>
+                <li>
+                  <a href="https://github.com/ZigaHajsen"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -56,29 +55,60 @@
       </div>
 
       <!-- Sidenav -->
-      <ul class="sidenav" id="mobile-nav">
+      <ul class="sidenav green darken-4" id="mobile-nav">
         <li>
-          <a href="#home">Home</a>
+          <a class="white-text" href="#home">Home</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a class="white-text" href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a class="white-text" href="#work">Work</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a class="white-text" href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="https://github.com/ZigaHajsen"
+            ><i class="fab fa-github white-text"></i
+          ></a>
         </li>
       </ul>
+
+      <h2 class="white-text center">Home</h2>
     </section>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Skills page -->
+    <section id="skills" class="section green darken-3 scrollspy">
+      <h2 class="white-text center">Skills</h2>
+    </section>
 
+    <!-- Work page -->
+    <section id="work" class="section grey darken-3 scrollspy">
+      <h2 class="white-text center">Work</h2>
+    </section>
+
+    <!-- Contact page -->
+    <section id="contact" class="section green darken-3 scrollspy">
+      <h2 class="white-text center">Contact</h2>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+      <div class="footer-copyright">
+        <div class="container white-text center">Žiga Hajšen © 2020</div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       // Sidenav
       const sideNav = document.querySelector('.sidenav');
       M.Sidenav.init(sideNav, {});
+
+      // Scrollspy
+      const scrollSpy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollSpy, {});
     </script>
   </body>
 </html>
