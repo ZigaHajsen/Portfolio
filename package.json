@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZigaHajsen/Portfolio.git"
+  },
+  "author": "Žiga Hajšen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZigaHajsen/Portfolio/issues"
+  },
+  "homepage": "https://github.com/ZigaHajsen/Portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
