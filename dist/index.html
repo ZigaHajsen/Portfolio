@@ -21,7 +21,7 @@
 
   <body>
     <!-- Home section -->
-    <section id="home" class="grey darken-3 scrollspy">
+    <section id="home" class="scrollspy parallax-container">
       <!-- Navbar -->
       <div class="navbar-fixed">
         <nav class="green darken-4">
@@ -77,6 +77,8 @@
       </ul>
 
       <h2 class="white-text center">Home</h2>
+
+      <div class="parallax"><img src="img/home.jpg" /></div>
     </section>
 
     <!-- Skills section -->
@@ -363,6 +365,10 @@
       // Scrollspy
       const scrollSpy = document.querySelectorAll('.scrollspy');
       M.ScrollSpy.init(scrollSpy, {});
+
+      // Parallax
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax, {});
     </script>
   </body>
 </html>
