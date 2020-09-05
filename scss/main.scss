@@ -13,11 +13,22 @@
   color: #424242 !important;
 }
 
-#home,
+#home {
+  height: calc(100vh - 64px);
+}
+
 #work {
   height: 100vh;
 }
 
+.parallax img {
+  width: 200%;
+}
+
 .medium {
   height: 350px !important;
+}
+
+.typewriter {
+  font-size: 7rem;
 }
