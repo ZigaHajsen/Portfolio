@@ -14,10 +14,10 @@
   height: calc(100vh - 64px); }
 
 .parallax img {
-  width: 500%; }
+  width: 400%; }
 
 .medium {
   height: 350px !important; }
 
 .typewriter {
-  font-size: 7rem; }
+  font-size: 6rem; }
